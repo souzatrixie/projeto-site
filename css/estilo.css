@@ -2,8 +2,16 @@
 
 body{
     background-color: rgb(28,67,118) ;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 div#interface {
@@ -124,6 +132,35 @@ section#corpo{
     padding-right: 15px;
 }
 
+header#cabecalho-artigo h1{
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+
+article#noticia h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.dir{
+    text-align: right;
+}
+
 table#tabela{
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -147,10 +184,33 @@ table#tabela td.esquerda{
     background-color: #606060;
 }
 
-section#lateral{
+aside#lateral{
     display: block;
-    width: 400px;
+    width: 350px;
     float: right;
+    background-color: #606060;
+    padding: 27px;
+    margin-top: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+    font-size: 20pt;
+    color: #dddddd;
+    margin-top: 0px;
+}
+
+aside#lateral h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+aside#lateral h3{
+    font-size: 12px;
+    color: #606060;
 }
 
 img#ash{
