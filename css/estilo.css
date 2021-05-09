@@ -238,14 +238,17 @@ img#rocket{
     width: 25%;
     height: 25%;
 }
-footer#rodape{
-    clear: both;
-    border-top: 1px solid #606060;
-}
+
 div.box {
     width: 700px;
     display: inline-block;
 }
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
 footer#rodape p {
     text-align: center;
 }
