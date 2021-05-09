@@ -134,8 +134,9 @@ section#corpo{
 
 header#cabecalho-artigo h1{
     font-size: 20pt;
-    color: #606060;
+    color: #ffffff;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 header#cabecalho-artigo h2{
