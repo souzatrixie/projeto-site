@@ -2,42 +2,127 @@
     <html lang="pt-br">
         <head>
             <link rel="stylesheet" href="../css/estilo.css">
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul>
-                    <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="index.html"> Home </a></li>
-                    <li onmouseover="mudaFoto('../_imagens/glossario.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="glossar.html"> Glossário </a></li>
-                    <li onmouseover="mudaFoto('../_imagens/camera.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="fotos.html"> Fotos </a></li>
-                    <li onmouseover="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="fale-conosco.html"> Fale conosco </a></li>
-                 </ul>
-            </nav>
         </head>
         <body>
             <div id="interface">
-                Fale Conosco > Contato
-                Formulário de Contato
-                por Beatriz de Souza
-                Atualizado em Maio/20121
-
-                Identificação do Usuário
-                    Nome:
-                    Senha:
-                    E-mail:
-
-                Mensagem do Usuário
-                    Grau de Urgência:
-                    Mensagem:
-
-
-                [BOTÃO ENVIAR]
-                   
-            </body>
-            <footer id="rodape">
+                <header id="cabecalho">
+                    <hgroup>
+                        <h1>Contatos</h1>
+                        <h2> Cadastre-se para saber mais! </h2>
+                    </hgroup>
+                    <img id="icone" src="../_imagens/logo.png" alt="logo"/>
+                    
+                    <nav id="menu">
+                        <h1>Menu Principal</h1>
+                        <ul>
+                           <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="index.html"> Home </a></li>
+                           <li onmouseover="mudaFoto('../_imagens/glossario.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="glossar.html"> Glossário </a></li>
+                           <li onmouseover="mudaFoto('../_imagens/camera.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="fotos.html"> Fotos </a></li>
+                           <li onmouseover="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/logo.png')"><a href="fale-conosco.html"> Fale conosco </a></li>
+                        </ul>
+                    </nav>
+                     </header>
+                 <section id="corpo">  
+                <html>
+                    <head>
+                      <title>Página de Registro</title>
+                      <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+                    </head>
+                    <body>
+                      <div class="container">
+                        <div class="row col-md-6 col-md-offset-3">
+                          <div class="panel panel-primary">
+                            <div class="panel-heading text-center">
+                              <h1>Formulário de Registro</h1>
+                            </div>
+                            <div class="panel-body">
+                              <form action="connect.php" method="post">
+                                <div class="form-group">
+                                  <label for="Primeiro Nome">Nome</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="firstName"
+                                    name="Nome"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="Sobrenome">Sobrenome</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="lastName"
+                                    name="Sobrenome"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="gender">Gênero</label>
+                                  <div>
+                                    <label for="male" class="radio-inline"
+                                      ><input
+                                        type="radio"
+                                        name="gender"
+                                        value="m"
+                                        id="male"
+                                      />Male</label
+                                    >
+                                    <label for="female" class="radio-inline"
+                                      ><input
+                                        type="radio"
+                                        name="gender"
+                                        value="f"
+                                        id="female"
+                                      />Female</label
+                                    >
+                                    <label for="others" class="radio-inline"
+                                      ><input
+                                        type="radio"
+                                        name="gender"
+                                        value="o"
+                                        id="others"
+                                      />Outros</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="password">Senha</label>
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password"
+                                    name="password"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="number">Telefone</label>
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="number"
+                                    name="number"
+                                  />
+                                </div>
+                                <input type="submit" class="btn btn-primary" />
+                              </form>
+                            </div>
+                            </div>
+                          </section>
+                 </body>
+               <footer id="rodape">
                     <p>
                         Copyright 2021 - by Beatriz de Souza <br>
                         <a href="http://github.com/souzatrixie" target="_blank">GitHub</a>
-                    </p>
-            </footer>
-        </div>
+                      </p>
+                </footer>
+            </div>
         </html>
 
