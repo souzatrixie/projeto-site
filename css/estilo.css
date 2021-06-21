@@ -24,13 +24,13 @@ div#interface {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 1210px;
+    left: 1000px;
     top: 50px;
     height: 100px
 }
 header#cabecalho {
     border-bottom: 2px rgb(28,67,118) solid;
-    height: 130px;
+    height: 100px;
     background: url("../imagens/logo.png") no-repeat 0px 60px;
 }
 
@@ -96,7 +96,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 700px;
+    left: 500px;
 }
 nav#menu li{
     display: inline-block;
@@ -165,8 +165,8 @@ article#noticia h2{
 table#tabela{
     border: 1px solid #606060;
     border-spacing: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    left: auto;
+    right: auto;
 }
 
 table#tabela td{
